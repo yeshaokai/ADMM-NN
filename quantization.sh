@@ -1,0 +1,2 @@
+export CUDA_VISIBLE_DEVICES=1
+./build/tools/caffe train --solver=models/bvlc_alexnet/solver_quantization.prototxt --weights=/data2/jiayu/gpu2/clustering_21_240w/caffe_alexnet_retrain_iter_450000.caffemodel  --centroids=/data2/jiayu/gpu2/clustering_21_240w/caffe_alexnet_train_admm_iter_1500000.solverstate.centroids  --centroidranges=/data2/jiayu/gpu2/clustering_21_240w/caffe_alexnet_train_admm_iter_1500000.solverstate.centroidsrange

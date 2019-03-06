@@ -1,0 +1,18 @@
+net: "examples/mnist/lenet_train_test_admm_clustering.prototxt"
+test_iter: 100
+test_interval: 500
+base_lr: 0.001
+momentum: 0.9
+weight_decay: 0.0005
+lr_policy: "admm"
+gamma: 0.1
+stepvalue: 2000
+admm_iter: 6000
+display: 100
+max_iter: 120000
+snapshot: 1000
+snapshot_prefix: "examples/mnist/lenet_admm_clustering"
+solver_mode: GPU
+# Pruning phase: admm or retrain
+# pruning_phase: "retrain"
+clustering_phase:"admm"

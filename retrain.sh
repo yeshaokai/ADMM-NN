@@ -1,0 +1,2 @@
+export CUDA_VISIBLE_DEVICES=0
+./build/tools/caffe train --solver=models/bvlc_alexnet/solver_retrain.prototxt --weights=/data/kaiqi/24_prune_quantization01/caffe_alexnet_train_admm_iter_2400000.caffemodel  --centroids=/data/kaiqi/24_prune_quantization01/caffe_alexnet_train_admm_iter_2400000.solverstate.centroids  --centroidranges=/data/kaiqi/24_prune_quantization01/caffe_alexnet_train_admm_iter_2400000.solverstate.centroidsrange
